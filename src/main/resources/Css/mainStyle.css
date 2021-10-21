@@ -1,0 +1,40 @@
+#closeBtn{
+    -fx-background-color: transparent;
+}
+
+#closeBtn:hover {
+    -fx-background-color: red;
+}
+
+#mainRoot {
+    -fx-background-color: linear-gradient(to bottom, #3333cc 0%, #00ccff 100%);
+}
+
+#addButton {
+    -fx-background-color: transparent;
+}
+
+#searchButton {
+    -fx-background-color: transparent;
+}
+
+#ggTranslate {
+    -fx-background-color: transparent;
+}
+
+#deleteButton {
+    -fx-background-color: transparent;
+}
+
+#deleteButton:hover, #ggTranslate:hover, #addButton:hover, #searchButton:hover {
+    -fx-scale-x: 2.1;
+    -fx-scale-y: 2.1;
+    -fx-scale-z: 2.1;
+}
+
+#splitPane {
+    -fx-border-color: blue;
+    -fx-border: bold;
+}
+
+

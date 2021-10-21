@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutY="1.0" prefHeight="460.0" prefWidth="388.0">
+         <children>
+            <TextField fx:id="engWord" layoutX="63.0" layoutY="32.0" prefHeight="42.0" prefWidth="249.0" />
+            <ListView fx:id="listView" layoutX="62.0" layoutY="97.0" prefHeight="253.0" prefWidth="249.0" />
+            <Button fx:id="toMeaning" layoutX="134.0" layoutY="386.0" mnemonicParsing="false"  prefHeight="35.0" prefWidth="105.0" text="Button" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="vnamWord" alignment="CENTER" layoutX="433.0" layoutY="119.0" prefHeight="205.0" prefWidth="193.0" text="Label" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainRoot" prefHeight="635.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="border.Controller">
+   <children>
+      <AnchorPane layoutY="2.0" prefHeight="148.0" prefWidth="762.0">
+         <children>
+            <ImageView fitHeight="64.0" fitWidth="72.0" layoutX="436.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/vietnam.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="64.0" layoutX="354.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/dich.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="64.0" fitWidth="72.0" layoutX="251.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/england.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="281.0" layoutY="57.0" prefHeight="44.0" prefWidth="193.0" text="E - V DICTIONARY">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="deleteButton" layoutX="320.0" layoutY="100.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" >
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="64.0" layoutX="320.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="addButton" layoutX="203.0" layoutY="101.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" >
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="64.0" layoutX="203.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="searchButton" layoutX="470.0" layoutY="95.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" >
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="64.0" layoutX="470.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="ggTranslate" layoutX="608.0" layoutY="97.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" >
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="64.0" layoutX="608.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/ggTranslate.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="closeBtn" layoutX="727.0" layoutY="-3.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" text="X" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="container" layoutX="21.0" layoutY="148.0" prefHeight="464.0" prefWidth="720.0" />
+   </children>
+</AnchorPane>
