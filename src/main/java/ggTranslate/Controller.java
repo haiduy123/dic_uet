@@ -53,10 +53,19 @@ public class Controller {
 
     //chuyển sng giao diện chính
     void searchButton(ActionEvent event) throws Exception{
-        URL url = new File("C:\\Users\\duyhai\\IdeaProjects\\demo2\\src\\main\\resources\\FXML\\mainScence.fxml").toURI().toURL();
+        URL url = new File("C:\\Users\\duyhai\\IdeaProjects\\demo2\\src\\main\\resources\\FXML\\mainScene.fxml").toURI().toURL();
         Parent root = FXMLLoader.load(url);
         root.getStylesheets().add("file:///" + f.getAbsolutePath().replace("\\", "/"));
         Stage window = (Stage) searchButton.getScene().getWindow();
+        window.setScene(new Scene(root));
+    }
+
+    public void addButton (ActionEvent event) throws Exception{
+        URL url = new File("C:\\Users\\duyhai\\IdeaProjects\\demo2\\src\\main\\resources\\FXML\\addWord.fxml").toURI().toURL();
+        Parent root = FXMLLoader.load(url);
+        File f = new File("C:\\Users\\duyhai\\IdeaProjects\\demo2\\src\\main\\resources\\Css\\mainStyle.css");
+        root.getStylesheets().add("file:///" + f.getAbsolutePath().replace("\\", "/"));
+        Stage window = (Stage) addButton.getScene().getWindow();
         window.setScene(new Scene(root));
     }
 

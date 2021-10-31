@@ -16,7 +16,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
 
         //tải lên giao diên chính
-        URL url = new File("C:\\Users\\duyhai\\IdeaProjects\\demo2\\src\\main\\resources\\FXML\\mainScence.fxml").toURI().toURL();
+        URL url = new File("C:\\Users\\duyhai\\IdeaProjects\\demo2\\src\\main\\resources\\FXML\\mainScene.fxml").toURI().toURL();
         Parent root = FXMLLoader.load(url);
 
         //thêm file css

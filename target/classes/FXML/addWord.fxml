@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainRoot" prefHeight="635.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addWord.Controller">
+    <children>
+        <AnchorPane prefHeight="147.0" prefWidth="751.0">
+            <children>
+                <Label alignment="BOTTOM_CENTER" layoutY="-1.0" prefHeight="93.0" prefWidth="751.0" text="E-V DICTIONARY" textFill="#2f2c2c">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font>
+                </Label>
+                <Button fx:id="closeBtn" layoutX="708.0" layoutY="5.0" mnemonicParsing="false" onAction="#Exit" prefHeight="25.0" prefWidth="43.0" text="X" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="72.0" fitWidth="101.0" layoutX="220.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icon/england.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="72.0" fitWidth="101.0" layoutX="457.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icon/vietnam.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="addButton" alignment="CENTER" layoutX="352.0" layoutY="99.0" mnemonicParsing="false" textFill="#ebe7e7">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="183.0" layoutY="196.0" onDragDetected="#searchButton" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../icon/add.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="searchButton" alignment="CENTER" layoutX="504.0" layoutY="98.0" mnemonicParsing="false" onAction="#searchButton" textFill="#ebe7e7">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="150.0" layoutX="273.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../icon/search.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="ggTranslate" alignment="CENTER" layoutX="634.0" layoutY="94.0" mnemonicParsing="false" onAction="#ggTranslate" textFill="#ebe7e7">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="81.0" layoutX="62.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../icon/ggTranslate.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Label layoutX="94.0" layoutY="108.0" prefHeight="21.0" prefWidth="51.0" text="MENU">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="44.0" fitWidth="72.0" layoutX="354.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icon/dich.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="16.0" layoutY="150.0" prefHeight="464.0" prefWidth="720.0" style="-fx-background-color: white;">
+            <children>
+                <Label fx:id="addLabel" layoutX="20.0" prefHeight="58.0" prefWidth="313.0" text="Thêm Từ Mới" textFill="#0e1194">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="20.0" layoutY="66.0" prefHeight="41.0" prefWidth="149.0" text="Từ Tiếng Anh" textFill="#0e1194">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="20.0" layoutY="213.0" prefHeight="39.0" prefWidth="130.0" text="Giải Thích" textFill="#0e1194">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="addNewWord" layoutX="20.0" layoutY="122.0" prefHeight="72.0" prefWidth="313.0" />
+                <TextField fx:id="addMeaning" layoutX="20.0" layoutY="260.0" prefHeight="129.0" prefWidth="313.0" />
+                <Button fx:id="addNewBtn" layoutX="104.0" layoutY="411.0" mnemonicParsing="false" onAction="#addNewBtn" prefHeight="39.0" prefWidth="91.0" text="Thêm" />
+                <ImageView fitHeight="361.0" fitWidth="313.0" layoutX="436.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/addImage.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

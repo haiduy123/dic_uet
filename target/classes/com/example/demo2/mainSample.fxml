@@ -9,58 +9,106 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="445.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainScene.Controller">
+<AnchorPane fx:id="mainRoot" prefHeight="635.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainScene.Controller">
     <children>
-        <AnchorPane prefHeight="98.0" prefWidth="602.0">
+        <AnchorPane prefHeight="147.0" prefWidth="751.0">
             <children>
-                <Label alignment="CENTER" layoutY="-1.0" prefHeight="51.0" prefWidth="751.0" style="-fx-background-color: #032d4d;" text="E-V DICTIONARY" textFill="#fff9f9">
+                <Label alignment="BOTTOM_CENTER" layoutY="-1.0" prefHeight="93.0" prefWidth="751.0" text="E-V DICTIONARY" textFill="#2f2c2c">
                     <font>
                         <Font name="System Bold" size="19.0" />
                     </font>
                 </Label>
-                <Label layoutX="101.0" layoutY="60.0" prefHeight="21.0" prefWidth="51.0" text="MENU">
+                <Button fx:id="closeBtn" layoutX="708.0" layoutY="5.0" mnemonicParsing="false" onAction="#Exit" prefHeight="25.0" prefWidth="43.0" text="X" textFill="WHITE">
                     <font>
-                        <Font size="15.0" />
-                    </font>
-                </Label>
-                <Button fx:id="addButton" alignment="CENTER" layoutX="267.0" layoutY="55.0" mnemonicParsing="false" style="-fx-background-color: #032d4d;" text="ADD" textFill="#ebe7e7">
-                    <font>
-                        <Font size="15.0" />
+                        <Font size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="deleteButton" alignment="CENTER" layoutX="410.0" layoutY="53.0" mnemonicParsing="false" style="-fx-background-color: #032d4d;" text="DELETE" textFill="#ebe7e7">
+                <ImageView fitHeight="72.0" fitWidth="101.0" layoutX="220.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icon/england.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="44.0" fitWidth="51.0" layoutX="354.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icon/dich.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="72.0" fitWidth="101.0" layoutX="457.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icon/vietnam.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="addButton" alignment="CENTER" layoutX="354.0" layoutY="99.0" mnemonicParsing="false" onAction="#addButton" textFill="#ebe7e7">
                     <font>
                         <Font size="15.0" />
                     </font>
-                </Button>
-                <Button fx:id="ggTranslate" alignment="CENTER" layoutX="576.0" layoutY="53.0" mnemonicParsing="false" onAction="#ggTranslate" style="-fx-background-color: #032d4d;" text="GG TRANSLATE" textFill="#ebe7e7">
-                    <font>
-                        <Font size="15.0" />
-                    </font>
-                </Button>
-                <Button fx:id="closeBtn" layoutX="700.0" layoutY="9.0" mnemonicParsing="false" onAction="#Exit" prefHeight="25.0" prefWidth="43.0" style="-fx-background-color: #032d4d;">
                     <graphic>
-                        <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="704.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="183.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../../../../../../Downloads/Slider/Slider/src/sample/Images/exit.png" />
+                                <Image url="@../icon/add.png" />
                             </image>
                         </ImageView>
                     </graphic>
                 </Button>
+                <Button fx:id="searchButton" alignment="CENTER" layoutX="504.0" layoutY="98.0" mnemonicParsing="false" textFill="#ebe7e7">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="150.0" layoutX="273.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../icon/search.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="ggTranslate" alignment="CENTER" layoutX="634.0" layoutY="94.0" mnemonicParsing="false" onAction="#ggTranslate" textFill="#ebe7e7">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="81.0" layoutX="62.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../icon/ggTranslate.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Label layoutX="94.0" layoutY="108.0" prefHeight="21.0" prefWidth="51.0" text="MENU">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
             </children>
         </AnchorPane>
-        <Label layoutY="98.0" prefHeight="347.0" prefWidth="265.0" />
-        <Label fx:id="vnamWord" layoutX="354.0" layoutY="81.0" prefHeight="361.0" prefWidth="249.0" />
-        <TextField fx:id="englishWord" layoutX="40.0" layoutY="150.0" />
-        <Label alignment="CENTER" layoutX="72.0" layoutY="111.0" prefHeight="25.0" prefWidth="84.0" text="Nhập từ">
-            <font>
-                <Font name="System Bold" size="12.0" />
-            </font>
-        </Label>
-        <Button fx:id="translate" layoutX="265.0" layoutY="214.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="84.0" style="-fx-background-color: #032d4d;" text="Translate" textFill="#f5eeee">
-            <font>
-                <Font name="System Bold" size="12.0" />
-            </font>
-        </Button>
+        <AnchorPane layoutX="16.0" layoutY="150.0" prefHeight="464.0" prefWidth="720.0" style="-fx-background-color: white;">
+            <children>
+                <AnchorPane prefHeight="464.0" prefWidth="403.0">
+                    <children>
+                        <TextField fx:id="engWord" layoutX="60.0" layoutY="40.0" prefHeight="44.0" prefWidth="268.0" />
+                        <ListView fx:id="listView" layoutX="59.0" layoutY="108.0" onMouseClicked="#handleMouseClickAWord" prefHeight="333.0" prefWidth="268.0" />
+                        <Button fx:id="toMeaning" layoutX="342.0" layoutY="175.0" mnemonicParsing="false" onAction="#toMeaning" prefHeight="41.0" prefWidth="81.0" text="Translate" />
+                    </children>
+                </AnchorPane>
+                <Label fx:id="vnamWord" layoutX="462.0" layoutY="74.0" prefHeight="103.0" prefWidth="221.0" />
+                <Button fx:id="deleteButton" alignment="CENTER" layoutX="665.0" layoutY="14.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="21.0" prefWidth="51.0" textFill="#ebe7e7">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="40.0" layoutX="157.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../icon/delete.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <ImageView fitHeight="192.0" fitWidth="288.0" layoutX="403.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/mainImage.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
     </children>
 </AnchorPane>

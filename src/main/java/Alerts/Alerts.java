@@ -4,7 +4,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 
 public class Alerts {
-    public void showAlertInfo(String title, String content){
+    public static void showAlertInfo(String title, String content){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(title);
 
@@ -15,7 +15,7 @@ public class Alerts {
         alert.showAndWait();
     }
 
-    public void showAlertWarning(String title, String content) {
+    public static void showAlertWarning(String title, String content) {
         Alert alert = new Alert(Alert.AlertType.WARNING);
         alert.setTitle(title);
 
@@ -26,7 +26,7 @@ public class Alerts {
         alert.showAndWait();
     }
 
-    public Alert alertConfirmation(String title, String content){
+    public static Alert alertConfirmation(String title, String content){
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle(title);
 
